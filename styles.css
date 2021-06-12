@@ -111,6 +111,12 @@ h1 {
     font-size: 50px;
 }
 
+@media only screen and (max-width: 254px) {
+    .banner h1{
+        font-size: 10px;
+    }
+}
+
 /* adventure section styling, portfolio images */
 
 #adventures {
@@ -131,6 +137,7 @@ h1 {
 
 #guides {
     text-align: center;
+    margin: 30px;
 }
 
 #guides h1 {
