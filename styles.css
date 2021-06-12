@@ -4,13 +4,20 @@ html {
     box-sizing: border-box;
   }
 
-  .img-container img {
+.img-container img {
     max-width: 100%;
+    height: auto;
 }
 
 .img-container {
     width: 30%;
+    height: 40%;
     padding: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
 }
 
 /* header / nav section */ 
@@ -18,11 +25,12 @@ html {
 .header {
     position: fixed;
     width: 100%;
-    height: 80px;
-    z-index: 10;
+    height: 150px;
+    z-index: 5;
     display: inline-block;
-    padding: 0;
+    padding: 0px;
     border-bottom: solid 1px #c6c1c1;
+    background: white;
 }
 
 .logo {
@@ -33,10 +41,12 @@ html {
 
 .logo h3 {
     display: inline-block;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    font-size: 50px;
 }
 
 .logo img{
-    max-width: 50px;
+    max-width: 100px;
     height: auto;
     padding: 3px;
 }
@@ -56,37 +66,54 @@ html {
     margin: 5px;
 }
 
-/* Banner styling */
-
 .main-content {
+    padding: 0px;
     position: relative;
-    top: 100px;
+    top: 150px;
+    z-index: -1;]
 }
 
+/* Banner styling */
+
 .banner {
+    display: flex;
     width: 100%;
-    height: 43.5rem;
-    margin: 10px;
+    height: 75rem;
     background-image: url('./resources/images/didin-emelu-8--kuxbxuKU-unsplash.jpg');
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .banner .container{
-    width: 10rem;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
     position: relative;
-    top: 80px;
-    margin-left: 50px;
-    background-color:tomato;
-    padding: 10px;
+    top: 10%;
+    left: 10%;
+    background-color:rgb(10, 42, 75);
+    color: rgba(128, 128, 128, 0.781);
+    padding: 40px;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+}
+
+.banner .container h1 {
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    letter-spacing: 3px;
+}
+
+.banner .container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
 }
 
 /* adventure section styling, portfolio images */
 
 #adventures {
-padding-top: 20px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
