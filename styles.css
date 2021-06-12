@@ -5,8 +5,8 @@ html {
   }
 
 .img-container img {
-    max-width: 100%;
-    height: auto;
+    height: 367.5px;
+    width: 100%;
 }
 
 .img-container {
@@ -33,8 +33,7 @@ h1 {
     width: 100%;
     height: 150px;
     z-index: 5;
-    display: inline-block;
-    padding: 0px;
+    display: flex;
     border-bottom: solid 1px #c6c1c1;
     background: white;
 }
@@ -59,17 +58,19 @@ h1 {
 
 
 .nav {
+    float: right;
     display: flex;
     justify-content: center;
     align-items: center;
-    float: right;
-    padding: 5%;
     text-align: center;
-    margin:auto;
+    margin: auto;
 }
 
 .nav a {
-    margin: 5px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
 }
 
 .main-content {
@@ -113,7 +114,7 @@ h1 {
 /* adventure section styling, portfolio images */
 
 #adventures {
-    padding-top: 20px;
+    text-align: center;
 }
 
 .img-containers {
@@ -124,4 +125,18 @@ h1 {
 
 #adventures h1 {
     font-size: 100px;
+}
+
+/* Guides section */
+
+#guides {
+    text-align: center;
+}
+
+#guides h1 {
+    font-size: 100px;
+}
+
+#guides .img-container {
+    width: 33%
 }
