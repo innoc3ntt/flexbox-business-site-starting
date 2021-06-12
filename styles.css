@@ -140,3 +140,23 @@ h1 {
 #guides .img-container {
     width: 33%
 }
+
+.footer {
+    background-color: #9b9b9b;
+    padding: 1.5rem 2rem;
+}
+  
+.footer .content {
+    color: white;
+    display: flex;
+    font-size: .75rem;
+}
+  
+.footer .copyright {
+    flex-grow: 1;
+}
+  
+@media only screen and (min-width: 760px) {
+    footer .content {
+        font-size: .625rem;
+    }
