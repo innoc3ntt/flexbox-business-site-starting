@@ -4,25 +4,7 @@ html {
     box-sizing: border-box;
   }
 
-.header {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    z-index: 10;
-    display: inline-block;
-}
-
-.logo {
-    align-self: left;
-    width: 100%;
-}
-
-.logo img{
-    max-width: 50px;
-    height: auto;
-}
-
-.img-container img {
+  .img-container img {
     max-width: 100%;
 }
 
@@ -31,17 +13,80 @@ html {
     padding: 10px;
 }
 
-.banner {
-    position: relative;
-    up: 100px;
+/* header / nav section */ 
+
+.header {
+    position: fixed;
     width: 100%;
+    height: 80px;
+    z-index: 10;
+    display: inline-block;
+    padding: 0;
+    border-bottom: solid 1px #c6c1c1;
+}
+
+.logo {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    display: inline-block;
+}
+
+.logo img{
+    max-width: 50px;
+    height: auto;
+    padding: 3px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    padding: 5%;
+    text-align: center;
+    margin:auto;
+}
+
+.nav a {
+    margin: 5px;
+}
+
+/* Banner styling */
+
+.main-content {
+    position: relative;
+    top: 100px;
+}
+
+.banner {
+    width: 100%;
+    height: 43.5rem;
+    margin: 10px;
     background-image: url('./resources/images/didin-emelu-8--kuxbxuKU-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.banner .container{
+    width: 10rem;
+    height: auto;
+    position: relative;
+    top: 80px;
+    margin-left: 50px;
+    background-color:tomato;
+    padding: 10px;
+}
+
+/* adventure section styling, portfolio images */
+
 #adventures {
+padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
